@@ -61,8 +61,6 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := librsloader
 
-LOCAL_MODULE_TAGS := optional
-
 LOCAL_SRC_FILES := \
   lib/ELFHeader.cpp \
   lib/ELFSymbol.cpp \
@@ -123,8 +121,6 @@ include $(BUILD_EXECUTABLE)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := test-librsloader
-
-LOCAL_MODULE_TAGS := tests
 
 LOCAL_LDLIBS := \
   -lpthread \
